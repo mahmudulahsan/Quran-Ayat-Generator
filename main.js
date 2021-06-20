@@ -17,7 +17,7 @@ var audio = document.querySelector('#myaudio');
 press.addEventListener('click', ()=>{
     var random = Math.floor(Math.random() * 6237);
 
-    fetch('http://api.alquran.cloud/v1/ayah/'+random)
+    fetch('https://api.alquran.cloud/v1/ayah/'+random)
     .then(res => res.json())
     .then(data => {
         console.log(data);
